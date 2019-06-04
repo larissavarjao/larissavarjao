@@ -1,14 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
-
-import Layout from "../components/layout";
+import "./style.css";
 
 const IndexPage = () => (
-  <Layout>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      Em construção
-    </div>
-  </Layout>
+  <div className="container">
+    <h1>Em construção...</h1>
+  </div>
 )
 
 export default IndexPage;
