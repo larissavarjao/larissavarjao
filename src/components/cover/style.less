@@ -1,38 +1,37 @@
 @import "../../styles/global.less";
 
 .cover {
-    background-image: url('../../images/background-cover.jpg');
+    background: @white;
     height: 100vh; 
     width: 100vw;
-  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 
     h1 {
-        font-size: 50px;
-        text-transform: uppercase;
-        color: @white;
-        font-weight: 400;
-        text-align: center;
+        font-size: 40px;
+        color: @darkblue;
+        font-weight: 700;
+        margin: 0 0 24px;
     }
+    
+    h3 {
+        font-size: 20px;
+        color: #293347;
+        font-weight: 400;
+        margin: 0 0 24px;
 
-    .title-bold {
-        font-weight: 900;
+        span {
+            font-weight: 700;
+        }
     }
 
     .social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-            margin-right: 12px;
+        .developer {
+            width: 210px;
+            margin: 32px 0;
         }
     }
 }
