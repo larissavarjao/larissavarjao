@@ -7,7 +7,7 @@ const gatsby = require("../../images/gatsby-icon.png");
 const Footer = () => (
     <div className="footer">
         <span className="name">Larissa Varjão</span>
-        <div>
+        <div className="gatsby">
             <span className="develope-by">Desenvolvido com Gatsby</span>
             <a href="https://www.gatsbyjs.org/" target="_blank">
                 <img src={gatsby} className="footer-gatsby" />

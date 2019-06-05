@@ -9,8 +9,6 @@ const Parallax = ({ background }: IProps) => (
     <div className="parallax" style={{
         background: `url(${background})`
     }}>
-        {console.log(background)}
-        ola
     </div>
 )
 

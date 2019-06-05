@@ -56,19 +56,44 @@
 
 @media screen {
     @media (max-width: 768px) {
-        .card-image {
-            display: none;
-        }
-
+        
         .education {
+            flex-direction: column;
+            justify-content: space-around;
+            
+            .card-image {
+                display: none;
+            }
 
-            .card {
-                padding: 2rem;
+            .card-text {
+                align-items: center;
                 text-align: center;
-                height: auto;
 
                 h2 {
-                    font-size: 2rem;
+                    font-size: 1.8em;
+                }
+
+                h3 {
+                    font-size: 0.9rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+
+                .card-section {
+                    align-items: center;
+    
+                    .card-title {
+                        display: flex;
+                        flex-direction: column;
+                        width: 90vw;
+                        padding: 0 5%;
+        
+                        img {
+                            width: 25px;
+                        }
+                    }
                 }
             }
         }

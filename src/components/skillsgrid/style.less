@@ -1,4 +1,4 @@
-.skills-grid{
+.skills-grid {
     display: grid;
     grid-template-columns: 25px 1fr;
     grid-gap: 12px;
@@ -12,5 +12,13 @@
         color: rgba(0,0,0,0.7);
         font-weight: 300;
         font-size: 18px;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .skills-grid {
+            grid-template-columns: 25px 90px;
+        }
     }
 }
