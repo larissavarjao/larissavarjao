@@ -1,6 +1,7 @@
 import * as React from "react";
 import SEO from "../components/seo";
 import Cover from "../components/cover";
+import Footer from "../components/footer";
 import Projects from "../components/projects";
 import Parallax from "../components/parallax";
 import Education from "../components/education";
@@ -35,6 +36,7 @@ const IndexPage = () => (
     <Projects />
     <Parallax background={work} />
     <Experience />
+    <Footer />
   </div>
 )
 

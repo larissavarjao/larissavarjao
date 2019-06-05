@@ -1,0 +1,42 @@
+@import "../../styles/global.less";
+
+.footer {
+    background: @darkblue;
+    height: 64px; 
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .develope-by {
+        color: @white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .name {
+        color: @white;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 24px;
+    }
+
+    .footer-gatsby {
+        width: 30px;
+        object-fit: cover;
+        margin-left: 10px;
+    }
+
+    .footer-icons {
+        color: @white;
+        font-size: 24px;
+        margin: 8px;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+    }
+}
