@@ -24,6 +24,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Montserrat:100,300,400,500,600,700,800,900', 'Lato']
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
