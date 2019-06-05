@@ -1,0 +1,32 @@
+@import "../../styles/global.less";
+
+.skills-others {
+    height: 100vh;
+    width: 100vw;
+    background-color: @white;
+    color: @pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    ul {
+        li {
+            margin: 8px 0;
+        }
+    }
+
+    .comunication {
+        width: 80vh;
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .comunication {
+            display: none;
+        }
+    }
+}

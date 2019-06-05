@@ -3,7 +3,10 @@ import SEO from "../components/seo";
 import Cover from "../components/cover";
 import Education from "../components/education";
 import Experience from "../components/experience";
-import Skills from "../components/skills";
+import SkillsTech from "../components/skillstech";
+import SkillsOthers from "../components/skillsothers";
+import SkillsParallax from "../components/skillsparallax";
+import EducationParallax from "../components/educationparallax";
 
 import 'antd/dist/antd';
 import "../styles/index.less";
@@ -14,9 +17,12 @@ const IndexPage = () => (
     <SEO title="Larissa Varjão" />
 
     <Cover />
-    <Education />
     <Experience />
-    <Skills />
+    <EducationParallax />
+    <Education />
+    <SkillsParallax />
+    <SkillsTech />
+    <SkillsOthers />
   </div>
 )
 
