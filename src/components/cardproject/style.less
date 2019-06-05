@@ -1,0 +1,54 @@
+@import "../../styles/global.less";
+
+.card-project {
+    width: 30vw;
+    height: 20vw;
+    position: relative;
+    
+    &:hover {
+        .card-body {
+            opacity: 1;
+            transition: .45s ease-in-out;
+        }
+        
+        .card-image {
+            opacity: 0;
+            transition: .45s ease-in-out;
+        }
+    }
+    
+    .card-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: @radius;
+        opacity: 1;
+    }
+    
+    .card-body {
+        border-radius: @radius;
+        background: @darkblue;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .45s ease-in-out;
+
+        h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 0 12px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .card-button-github {
+            margin-left: 12px;
+        }
+    }
+}

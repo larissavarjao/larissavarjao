@@ -1,0 +1,42 @@
+@import "../../styles/global.less";
+
+.projects {
+    width: 100vw;
+    min-height: 120vh;
+    background: @white;
+    padding: 16px 0;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 10vh;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-gap: 2vw;
+    }
+
+    .project-button-github {
+        margin-top: 10vh;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .experience {
+            .experience-item {
+                width: 90vw;
+                height: auto;
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
