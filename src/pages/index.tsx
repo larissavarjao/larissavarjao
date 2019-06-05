@@ -2,6 +2,7 @@ import * as React from "react";
 import SEO from "../components/seo";
 import Cover from "../components/cover";
 import Education from "../components/education";
+import Experience from "../components/experience";
 
 import 'antd/dist/antd';
 import "../styles/index.less";
@@ -13,6 +14,7 @@ const IndexPage = () => (
 
     <Cover />
     <Education />
+    <Experience />
   </div>
 )
 
