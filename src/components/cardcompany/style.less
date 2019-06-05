@@ -1,0 +1,49 @@
+@import "../../styles/global.less";
+
+.company-card {
+    margin: 16px 32px;
+    background: @white;
+    border-radius: @radius;
+    box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    .company-header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .company-logo {
+        margin-right: 12px;
+        width: 40px;
+        object-fit: cover;
+    }
+
+    .company-link {
+        font-size: 16px;
+        align-self: center;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        margin: 0;
+        font-weight: 700;
+    }
+    
+    span {
+        font-size: 1rem;
+        font-weight: 500;
+        color: black;
+    }
+    
+    p {
+        margin-top: 12px;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
