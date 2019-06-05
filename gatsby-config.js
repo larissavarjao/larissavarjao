@@ -18,6 +18,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-less`,
     {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
