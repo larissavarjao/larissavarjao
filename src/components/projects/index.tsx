@@ -21,7 +21,7 @@ const projects: ICardProps[] = [
 
 const Projects = () => (
     <div className="projects">
-        <h2>Projetos</h2>
+        <h2>Trabalhos Realizados Recentemente</h2>
         <div className="projects-grid">
             {projects.map(project => <CardProject title={project.title} key={project.title} url={project.url} image={project.image} github={project.github} />)}
         </div>
