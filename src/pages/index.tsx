@@ -2,9 +2,11 @@ import * as React from "react";
 import SEO from "../components/seo";
 import Cover from "../components/cover";
 import Education from "../components/education";
+import HelloWorld from "../components/helloworld";
 import Experience from "../components/experience";
-import SkillsTech from "../components/skillstech";
-import SkillsOthers from "../components/skillsothers";
+import SkillsFront from "../components/skillsfront";
+import SkillsBack from "../components/skillsback";
+import CoverParallax from "../components/coverparallax";
 import SkillsParallax from "../components/skillsparallax";
 import EducationParallax from "../components/educationparallax";
 
@@ -17,12 +19,14 @@ const IndexPage = () => (
     <SEO title="Larissa Varjão" />
 
     <Cover />
+    <CoverParallax />
+    <HelloWorld />
+    <SkillsParallax />
+    <SkillsFront />
+    <SkillsBack />
     <Experience />
     <EducationParallax />
     <Education />
-    <SkillsParallax />
-    <SkillsTech />
-    <SkillsOthers />
   </div>
 )
 
