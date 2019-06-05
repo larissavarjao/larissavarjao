@@ -5,7 +5,7 @@ const HelloWorld = () => (
     <div className="helloworld">
         <div className="helloworld-text">
             <h3>Hello, world! Prazer, sou a Larissa!</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Cerca de dois anos e meio atrás me vi terminando o curso de administração, sem realmente me identificar com o que fazia. Foi nesse momento que comecei a aprender a programar e me interessar cada vez mais pela área de TI. Me tornei inicialmente Front-End e depois comecei a buscar também a área de Back-End. Hoje, trabalho na Cubos como FullStack Web, desenvolvendo APIs e fazendo sites e dashboards dinâmicos e responsivos.</p>
         </div>
     </div>
 )
