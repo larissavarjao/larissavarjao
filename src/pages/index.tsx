@@ -1,5 +1,4 @@
 import * as React from "react";
-const SEO = React.lazy(() => import("../components/seo"));
 const Cover = React.lazy(() => import("../components/cover"));
 const Footer = React.lazy(() => import("../components/footer"));
 const Projects = React.lazy(() => import("../components/projects"));
@@ -24,8 +23,6 @@ const work = require("../images/background/background-work.jpg");
 const IndexPage = () => (
   <React.Suspense fallback={<Spin indicator={<Icon type="loading" style={{ fontSize: 32, width: "100vw", height: "100vh", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} spin />} className="spin" />}>
     <div className="container">
-      <SEO title="Larissa Varjão" />
-
       <Cover />
       <Parallax background={cover} />
       <HelloWorld />

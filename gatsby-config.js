@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Larissa Varjão Portfólio`,
+    title: `Larissa Varjão`,
     description: `Portfólio relativo a projetos e experiências profissionais.`,
     author: `@larissavarjao`,
   },
