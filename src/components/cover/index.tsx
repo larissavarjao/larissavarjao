@@ -1,15 +1,14 @@
-import React from "react";
+import * as React from "react";
 import "./style.less";
 import { GitHub } from "../svgs/github";
 import { Facebook } from "../svgs/facebook";
 import { Linkedin } from "../svgs/linkedin";
-import { Link } from "gatsby";
 
 const Cover = () => (
     <>
         <div className="cover">
             <div className="cover-card">
-                <h1>Fullstack Web Developer</h1>
+                <h1><span className="title-bold">Fullstack</span> Web Developer</h1>
                 <div className="social-media">
                     <a href="https://www.linkedin.com/in/larissa-varj%C3%A3o-152932b8/" target="_blank">
                         <Linkedin />

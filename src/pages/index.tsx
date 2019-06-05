@@ -1,6 +1,7 @@
-import React from "react";
+import * as React from "react";
 import SEO from "../components/seo";
 import Cover from "../components/cover";
+import Education from "../components/education";
 
 import 'antd/dist/antd';
 import "../styles/index.less";
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <SEO title="Larissa Varjão" />
 
     <Cover />
+    <Education />
   </div>
 )
 
