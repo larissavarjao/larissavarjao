@@ -31,12 +31,12 @@ const IndexPage = () => {
     <SEO title="Larissa Varjão" />
     <Cover changeLanguage={onChangeLanguage} language={language} />
     <Parallax background={cover} />
-    <HelloWorld changeLanguage={onChangeLanguage} language={language} />
+    <HelloWorld language={language} />
     <Parallax background={skills} />
     <SkillsFront />
     <SkillsBack />
     <Parallax background={education} />
-    <Education />
+    <Education language={language} />
     <Parallax background={projects} />
     <Projects />
     <Parallax background={work} />

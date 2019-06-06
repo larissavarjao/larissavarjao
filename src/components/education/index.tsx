@@ -1,36 +1,25 @@
 import * as React from "react";
 import "./style.less";
+import { IProps } from "../cover";
+import CardEducation from "../cardeducation";
 
 const programmer = require("../../images/programmer.png");
-const university = require("../../images/university.svg");
 
-const Education = () => (
-    <div className="education">
+const Education = ({ language }: IProps) => {
+    const subtitle = language === "pt" ? "Formação Acadêmica" : "Academic Education";
+    const unifacsArea = language === "pt" ? "Estudante Sistemas de Informação - " : "Student of Computer Information Systems - ";
+    const unifacsDuration = language === "pt" ? "Previsão para 2020" : "Finalization in 2020";
+    const ufbaArea = language === "pt" ? "Graduada em Administração - " : "Graduated in Business Administration - ";
+    const ufbaDuration = language === "pt" ? "Outubro de 2017" : "Completed in 2017";
+
+    return <div className="education">
         <div className="card-text">
-            <h2> Formação Acadêmica </h2>
-            <div className="card-section">
-                <div className="card-title">
-                    <img src={university} className="card-image" />
-                    <h3>Universidade de Salvador (UNIFACS)</h3>
-                </div>
-                <div className="card-title">
-                    <div />
-                    <p>Estudante Sistemas de Informação - <span className="italic-education">Previsão para 2020.2</span></p>
-                </div>
-            </div>
-            <div className="card-section">
-                <div className="card-title">
-                    <img src={university} className="card-image" />
-                    <h3>Universidade Federal da Bahia (UFBa)</h3>
-                </div>
-                <div className="card-title">
-                    <div />
-                    <p>Graduada em Administração - <span className="italic-education">outubro 2017</span></p>
-                </div>
-            </div>
+            <h2>{subtitle}</h2>
+            <CardEducation name="Universidade de Salvador (UNIFACS)" area={unifacsArea} duration={unifacsDuration} />
+            <CardEducation name="Universidade Federal da Bahia (UFBA)" area={ufbaArea} duration={ufbaDuration} />
         </div>
         <img src={programmer} className="card-image" />
     </div>
-)
+}
 
 export default Education;

@@ -9,7 +9,7 @@ const usa = require("../../images/united-states.png");
 const brazil = require("../../images/brazil.png");
 
 export interface IProps {
-    changeLanguage: (lang: LanguageOptions) => void;
+    changeLanguage?: (lang: LanguageOptions) => void;
     language: LanguageOptions;
 }
 
