@@ -1,0 +1,97 @@
+@import "../styles/global.less";
+
+.curriculum {
+    padding: 5%;
+    background: @white;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        color: @pink;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: @darkblue;
+        font-weight: 700;
+    }
+
+    span {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: @darkblue;
+    }
+
+    p {
+        color: #888;
+        font-size: 1rem;
+        margin: 6px 0 12px;     
+    }
+
+    .skills {
+        width: 100%;
+        .skills-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .back-margin {
+                margin-left: 20vw;
+            }
+        }
+    }
+
+    .card {
+        .card-experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            label {
+                font-size: 1.2rem;
+                color: @darkblue;
+            }
+        }
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .curriculum {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .skills {
+                .skills-flex {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .back-margin {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .card {
+                .card-experience {
+                    align-items: center;
+                }
+            }
+
+            .education-cv {
+                .education-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

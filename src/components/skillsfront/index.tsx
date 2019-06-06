@@ -13,6 +13,7 @@ const gridFront = {
         "SASS",
         "LESS",
         "React",
+        "Gatsby",
         "TypeScript",
         "Webpack",
         "Mobx",
