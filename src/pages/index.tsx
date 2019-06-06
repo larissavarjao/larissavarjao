@@ -8,6 +8,7 @@ import HelloWorld from "../components/helloworld";
 import Experience from "../components/experience";
 import SkillsFront from "../components/skillsfront";
 import SkillsBack from "../components/skillsback";
+import SEO from "../components/seo";
 
 import "../styles/global.less";
 
@@ -19,6 +20,7 @@ const work = require("../images/background/background-work.jpg");
 
 const IndexPage = () => (
   <div className="container">
+    <SEO title="Larissa Varjão" />
     <Cover />
     <Parallax background={cover} />
     <HelloWorld />

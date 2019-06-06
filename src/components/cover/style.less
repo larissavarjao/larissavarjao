@@ -9,6 +9,37 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+
+    .header {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .social-media-cover {
+            margin-left: 10vh;
+
+            .cover-icons {
+                font-size: 24px;
+                margin: 8px;
+            }
+        }
+
+        .larissa {
+            font-size: 2rem;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .buttons-cover {
+            margin-right: 10vh;
+        }
+    }
 
     h1 {
         font-size: 40px;
