@@ -38,10 +38,10 @@ const IndexPage = () => {
     <Parallax background={education} />
     <Education language={language} />
     <Parallax background={projects} />
-    <Projects />
+    <Projects language={language} />
     <Parallax background={work} />
-    <Experience />
-    <Footer />
+    <Experience language={language} />
+    <Footer language={language} />
   </div>;
 }
 
