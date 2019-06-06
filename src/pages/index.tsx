@@ -18,10 +18,18 @@ const education = require("../images/background/background-education.jpg");
 const projects = require("../images/background/background-projects.jpg");
 const work = require("../images/background/background-work.jpg");
 
-const IndexPage = () => (
-  <div className="container">
+export type LanguageOptions = "pt" | "en";
+
+const IndexPage = () => {
+  const [language, setlanguage] = React.useState<LanguageOptions>("pt");
+
+  const onChangeLanguage = (lang: LanguageOptions) => {
+    setlanguage(lang);
+  }
+
+  return <div className="container">
     <SEO title="Larissa Varjão" />
-    <Cover />
+    <Cover changeLanguage={onChangeLanguage} language={language} />
     <Parallax background={cover} />
     <HelloWorld />
     <Parallax background={skills} />
@@ -34,7 +42,7 @@ const IndexPage = () => (
     <Parallax background={work} />
     <Experience />
     <Footer />
-  </div>
-)
+  </div>;
+}
 
 export default IndexPage;

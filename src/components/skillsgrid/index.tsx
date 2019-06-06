@@ -7,7 +7,7 @@ interface IProps {
 
 const SkillsGrid = ({ content }: IProps) => (
     <div>
-        {content.skillsArray.map(skill => <div className="skills-grid" key={content.image}>
+        {content.skillsArray.map(skill => <div className="skills-grid" key={`${content.image}${skill}`}>
             <span className="skills-image"><img src={content.image} /></span>
             <label className="skills-text">{skill}</label>
         </div>)}
