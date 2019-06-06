@@ -10,7 +10,7 @@ export interface ICompanyCardProps {
 
 const CompanyCard = ({ title, description, logo, link }: ICompanyCardProps) => (
     <div className="company-card">
-        <div>
+        <div className="card-body">
             <div className="company-header">
                 <img src={logo} className="company-logo" />
                 <h3>{title}</h3>
