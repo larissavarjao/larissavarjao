@@ -13,6 +13,7 @@ const backSkills = {
         "RethinkDB",
         "MongoDB",
         "Jest",
+        "SQL",
     ]
 };
 

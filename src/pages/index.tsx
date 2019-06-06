@@ -31,7 +31,7 @@ const IndexPage = () => {
     <SEO title="Larissa Varjão" />
     <Cover changeLanguage={onChangeLanguage} language={language} />
     <Parallax background={cover} />
-    <HelloWorld />
+    <HelloWorld changeLanguage={onChangeLanguage} language={language} />
     <Parallax background={skills} />
     <SkillsFront />
     <SkillsBack />

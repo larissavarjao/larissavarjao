@@ -8,12 +8,12 @@ const developer = require("../../images/developer.png");
 const usa = require("../../images/united-states.png");
 const brazil = require("../../images/brazil.png");
 
-interface ICoverProps {
+export interface IProps {
     changeLanguage: (lang: LanguageOptions) => void;
     language: LanguageOptions;
 }
 
-const Cover = ({ changeLanguage, language }: ICoverProps) => {
+const Cover = ({ changeLanguage, language }: IProps) => {
     const subtitle = language === "pt" ? "Desenho e programo sites, e eu amo o que eu faço." : "Design and code for web, and I love what I do.";
 
     const curriculum = language === "pt" ? "CURRÍCULO" : "CURRICULUM";
