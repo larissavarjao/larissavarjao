@@ -2,6 +2,7 @@ import * as React from "react";
 import "./style.less";
 import CardProject, { ICardProps } from "../cardproject";
 import { Button, Icon } from "antd";
+import { IProps } from "../cover";
 
 const mtfa = require("../../images/projects/mtfa.jpg");
 const escola = require("../../images/projects/escola.jpg");
@@ -19,16 +20,19 @@ const projects: ICardProps[] = [
     }
 ];
 
-const Projects = () => (
-    <div className="projects">
-        <h2>Trabalhos Realizados Recentemente</h2>
+const Projects = ({ language }: IProps) => {
+    const subtitle = language === "pt" ? "Trabalhos Realizados Recentemente" : "Recent Work";
+    const github = language === "pt" ? "ABRIR GITHUB " : "OPEN IN GITHUB";
+
+    return <div className="projects">
+        <h2>{subtitle}</h2>
         <div className="projects-grid">
-            {projects.map(project => <CardProject title={project.title} key={project.title} url={project.url} image={project.image} github={project.github} />)}
+            {projects.map(project => <CardProject language={language} title={project.title} key={project.title} url={project.url} image={project.image} github={project.github} />)}
         </div>
         <a className="project-button-github" href="https://github.com/larissavarjao" target="_blank">
-            <Button shape="round" ghost type="primary">ABRIR GITHUB <Icon type="github" /></Button>
+            <Button shape="round" ghost type="primary">{github}<Icon type="github" /></Button>
         </a>
-    </div>
-)
+    </div>;
+}
 
 export default Projects;
