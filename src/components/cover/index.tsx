@@ -15,8 +15,8 @@ export interface IProps {
 
 const Cover = ({ changeLanguage, language }: IProps) => {
     const subtitle = language === "pt" ? "Desenho e programo sites, e eu amo o que eu faço." : "Design and code for web, and I love what I do.";
-
-    const curriculum = language === "pt" ? "CURRÍCULO" : "CURRICULUM";
+    const curriculum = language === "pt" ? "CURRÍCULO" : "RESUME";
+    const curriculumLink = language === "pt" ? "curriculo" : "resume";
 
     return <div className="cover">
         <header className="header">
@@ -30,7 +30,7 @@ const Cover = ({ changeLanguage, language }: IProps) => {
                 <img src={brazil} onClick={() => changeLanguage("pt")} />
             </div>
             <div className="button-cover">
-                <Link to="curriculo">
+                <Link to={curriculumLink}>
                     <Button shape="round" ghost type="primary">{curriculum}</Button>
                 </Link>
             </div>

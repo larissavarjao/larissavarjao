@@ -1,0 +1,25 @@
+@import "../../styles/global.less";
+
+.card-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .span-company {
+        font-weight: 700;
+    }
+
+    label {
+        font-size: 1.2rem;
+        color: @darkblue;
+    }
+}
+
+@media screen {
+    @media (max-width: 768px) {
+        .card-experience {
+            align-items: center;
+        }
+    }
+}
