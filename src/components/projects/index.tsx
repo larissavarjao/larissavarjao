@@ -22,7 +22,6 @@ const projects: ICardProps[] = [
 
 const Projects = ({ language }: IProps) => {
     const subtitle = language === "pt" ? "Trabalhos Realizados Recentemente" : "Recent Work";
-    const github = language === "pt" ? "ABRIR GITHUB " : "OPEN IN GITHUB";
 
     return <div className="projects">
         <h2>{subtitle}</h2>
@@ -30,7 +29,7 @@ const Projects = ({ language }: IProps) => {
             {projects.map(project => <CardProject language={language} title={project.title} key={project.title} url={project.url} image={project.image} github={project.github} />)}
         </div>
         <a className="project-button-github" href="https://github.com/larissavarjao" target="_blank">
-            <Button shape="round" ghost type="primary">{github}<Icon type="github" /></Button>
+            <Button shape="round" ghost type="primary">GITHUB<Icon type="github" /></Button>
         </a>
     </div>;
 }
