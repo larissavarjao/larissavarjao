@@ -3,9 +3,9 @@ import "../styles/curriculum.less";
 import ResumeStructure from "../components/resumestructure";
 
 const otherSkills = [
-  "2016 – English (Advanced)",
+  "2019 – English (Advanced)",
   "2019 - Testing Training (Cubos Tecnologia)",
-  "2018 - Conducting the Lecture 'REST API and understanding its operation' (Larissa Varjão)",
+  "2019 - Conducting the Lecture 'REST API and understanding its operation' (Larissa Varjão)",
   "2018 - Ninja JavaScript Course",
   "2016 – Accounting 1 (Continuity of audit knowledge - PwC)",
   "2015 – FET (Initiation in Accounting - PwC)",
