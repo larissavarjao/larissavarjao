@@ -12,8 +12,13 @@ const Experience = ({ language }: IProps) => {
     const subtitle = language === "pt" ? "Experiência Profissional" : "Professional Experience";
     const companies: ICompanyCardProps[] = [
         {
+            title: "Agency Enterprise",
+            description: language === "pt" ? "Responsável por desenvolvimento de aplicações web usando React, Typescript e Webpack e APIs usando TypeScript, Postgres (ou RethinkDB), Ruby on Rails, C# e PHO. Usamos Scrum para gerenciamento de produto. Estou na AE desde Agosto de 2019 até o momento." : "Responsible for developing web applications using React, Typescript and Webpack and APIs using TypeScript, Postgres (or RethinkDB), Ruby on rails, C# and PHP. We use Scrum for product management. I've been in AE since August 2019 so far.",
+            logo: cubos,
+            link: "https://www.cubos.io"
+        },{
             title: "Cubos Tecnologia",
-            description: language === "pt" ? "Responsável por desenvolvimento de aplicações web usando React, Typescript e Webpack e APIs usando TypeScript, Postgres (ou RethinkDB), Kubernets e Docker. Usamos Scrum para gerenciamento de produto. Estou na Cubos desde Novembro de 2017 até o momento." : "Responsible for developing web applications using React, Typescript and Webpack and APIs using TypeScript, Postgres (or RethinkDB), Kubernets and Docker. We use Scrum for product management. I've been in Cubos since November 2017 so far.",
+            description: language === "pt" ? "Responsável por desenvolvimento de aplicações web usando React, Typescript e Webpack e APIs usando TypeScript, Postgres (ou RethinkDB), Kubernets e Docker. Usamos Scrum para gerenciamento de produto. Estou na Cubos desde Novembro de 2017 até Agosto de 2019." : "Responsible for developing web applications using React, Typescript and Webpack and APIs using TypeScript, Postgres (or RethinkDB), Kubernets and Docker. We use Scrum for product management. I've been in Cubos since November 2017 until August 2019.",
             logo: cubos,
             link: "https://www.cubos.io"
         },
